@@ -1,0 +1,251 @@
+{
+	"Application": {
+		"string": [{
+			"name": "Generic Attributes",
+			"attributes": [
+				"WS",
+				"AppName",
+				"CID",
+				"Ver",
+				"FacebookAppUID",
+				"FacebookAppSecret",
+				"TwitterConsumerKey",
+				"TwitterConsumerSecret",
+				"AndroidMapKey",
+				"IosGeocodingKey",
+				"AdMobPublisherId",
+				"AndroidProductKey",
+				"AndroidSenderID",
+				"ApplicationCacheSize",
+				"LogServerUrl",
+				"SESAPIKey",
+				"SESAPIURL",
+				"UUID"
+			]
+		}, {
+			"name": "Flurry Analytics Parameters",
+			"attributes": []
+		}, {
+			"name": "Custom Variable Names",
+			"attributes": []
+		}, {
+			"name": "Custom Variable Default Values",
+			"attributes": []
+		}, {
+			"name": "Logging Parameters",
+			"attributes": []
+		}],
+		"int": [{
+			"name": "Generic Attributes",
+			"attributes": [
+				"SID",
+				"AppID",
+				"ScreenW",
+				"ScreenH",
+				"Dpi",
+				"MaxLogSize"
+			]
+		}, {
+			"name": "Connection Preference Proxy Port",
+			"attributes": []
+		}],
+		"bool": [{
+			"name": "Generic Attributes",
+			"attributes": [
+				"AdMobTestUsage",
+				"DeviceOrientationPortrait",
+				"DeviceOrientationUpsideDown",
+				"DeviceOrientationLandscapeLeft",
+				"DeviceOrientationLandscapeRight",
+				"NavigationBarUpdate"
+			]
+		}, {
+			"name": "Connection Preference UseFor Flag",
+			"attributes": []
+		}, {
+			"name": "Connection Preference Types",
+			"attributes": []
+		}, {
+			"name": "Flurry Analytics Log Events",
+			"attributes": []
+		}, {
+			"name": "Custom Variable Secure Parameters",
+			"attributes": []
+		}, {
+			"name": "Logging Events",
+			"attributes": [
+				"LogError",
+				"LogWarning",
+				"LogDebug"
+			]
+		}],
+		"byte": [{
+			"name": "Generic Attributes",
+			"attributes": []
+		}],
+		"element": [{
+			"name": "Generic Attributes",
+			"attributes": []
+		}, {
+			"name": "Events",
+			"attributes": [
+				"ONSTART",
+				"ONERROR"
+			]
+		}, {
+			"name": "Flurry Analytics Data Sources",
+			"attributes": []
+		}, {
+			"name": "TabBars",
+			"attributes": []
+		}, {
+			"name": "Pages",
+			"attributes": [
+				"OBJ.PG",
+				"OBJ.PG"
+			]
+		}, {
+			"name": "Objects",
+			"attributes": []
+		}]
+	},
+	"Page": {
+		"string": [{
+			"name": "Generic Attributes",
+			"attributes": [
+				"Nm", "BgPicName"
+			]
+		}],
+		"int": [{
+			"name": "Generic Attributes",
+			"attributes": [
+				"BgClr",
+				"PageOrientation",
+				"X",
+				"Y",
+				"W",
+				"H"
+			]
+		}],
+		"boolean": [{
+			"name": "Generic Attributes",
+			"attributes": [
+				"Type",
+				"BgTparent",
+				"ShwStatusBar",
+				"EnableTabBar",
+				"LockOrientation",
+				"IsTemplatePage",
+				"IsSplashScreen",
+				"TouchEnabled",
+				"UsesTemplatePage",
+				"ShwNavigationBar",
+				"ShwActionBar"
+			]
+		}],
+		"byte": [{
+			"name": "Generic Attributes",
+			"attributes": [
+				"Pos",
+				"SMode"
+			]
+		}],
+		"element": [{
+			"name": "Items",
+			"attributes": [
+				"OBJ.PIC"
+			]
+		}, {
+			"name": "Generic Attributes",
+			"attributes": []
+		}, {
+			"name": "Events",
+			"attributes": [
+				"ONSHOW", "ONKEYP"
+			]
+		}]
+	},
+	"Picture": {
+		"string": [{
+			"name": "Generic Attributes",
+			"attributes": [
+				"Nm"
+			]
+		}],
+		"int": [{
+			"name": "Generic Attributes",
+			"attributes": [
+				"Alpha",
+				"X",
+				"Y",
+				"W",
+				"H",
+				"Z",
+				"Anc"
+			]
+		}],
+		"boolean": [{
+			"name": "Generic Attributes",
+			"attributes": [
+				"Vsb",
+				"TouchEnabled",
+				"EnableZoom",
+				"EnableScroll",
+				"EnableCache"
+			]
+		}],
+		"byte": [{
+			"name": "Generic Attributes",
+			"attributes": [
+				"Pos", "SMode"
+			]
+		}],
+		"element": [{
+			"name": "Events",
+			"attributes": []
+		}, {
+			"name": "Static Element List",
+			"attributes": ["Data Source"]
+		}]
+	},
+	"DataSource": {
+		"string": [{
+			"name": "Generic Attributes",
+			"attributes": [
+				"Bind Value"
+			]
+		}],
+		"int": [{
+			"name": "Generic Attributes",
+			"attributes": []
+		}],
+		"byte": [{
+			"name": "Generic Attributes",
+			"attributes": [
+				"Binding Type"
+			]
+		}],
+		"element": [{
+			"name": "Generic Attributes",
+			"attributes": []
+		}]
+	},
+	"Event": {
+		"string": [{
+			"name": "Generic Attributes",
+			"attributes": [
+				"Action Attribute"
+			]
+		}],
+		"byte": [{
+			"name": "Generic Attributes",
+			"attributes": [
+				"Event ID", "Event Attribute"
+			]
+		}],
+		"element": [{
+			"name": "Actions",
+			"attributes": []
+		}]
+	}
+}

@@ -1,0 +1,24 @@
+{
+	"color": {
+		"ok": "green",
+		"ready": "green",
+		"error": "red",
+		"key": "cyan",
+		"arrow": "white",
+		"value": "gray",
+		"wait": "yellow",
+		"header": "green",
+		"version": "cyan",
+		"feedBack": "gray",
+		"output": "white",
+		"filePath": "magenta"
+	},
+	"message": {
+		"header": "Smartface Command-Line Interface",
+		"version": "version",
+		"readyApk": "Your apk is ready.",
+		"readyXcode": "Your xcode project is ready.",
+		"finalMessage": "well done. ",
+		"waitMessage": "please wait ..."
+	}
+}

@@ -1,0 +1,28 @@
+{
+	"cwd": "Can not find Current Worksapcae Folder !",
+	"child": " child process errors occured.",
+	"interactive": " Interactive mode occured some errors",
+	"file": "File not found !",
+	"dir": "Directory not found !",
+	"fileType": " File ext not valid",
+	"playerPath": " we can not found player",
+	"platform": "Unknown platform !",
+	"task": "Unknown task !",
+	"java": "Not valid execPath for version 1.7",
+	"profile": "Can not parse profiles",
+	"plugin": "Can not parse plugins",
+	"json": "JSON parse error",
+	"projectRoot": "Project Root folder not found !",
+	"packageProfiles": "PackageProfiles.xml not Found in your Project Folder",
+	"projectJson": "project.json not Found in your Project Folder",
+	"existingSample": "This sample already exist. You can remove it and try again .",
+	"network": " Connection error. You can check internet connection.",
+	"sampleProjLink": "Project Link Error. you can check sample.json",
+	"git": "git command not found. You can install here : https://git-scm.com/book/en/v2/Getting-Started-Installing-Git",
+	"type": {
+		"network": "network error",
+		"existing": "existing error",
+		"child": "child error"
+	}
+
+}

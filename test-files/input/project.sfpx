@@ -1,0 +1,34 @@
+<SMARTFACEPROJECT xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="SmartfaceProjectPlayerUpdated.xsd" XmlVersion="1054" LType="1" Name="NewProject1" UID="-1" SID="-1" SName="No service selected" WS="http://www.smartface.io" PublishUrl="http://www.smartface.io" LastObjectID="DC7965F7-4337-4FD6-B246-07B3B803E056" ActiveProfileIndex="1" Version="1.0.0" BiDiMode="0">
+	<MainPageSettings Name="Page1" />
+	<Platform ScreenHeight="1920" ScreenWidth="1080" Dpi="401" iOSProfileName="iPhone 6 plus" androidProfileName="LG G3" AndroidVirtualDevice="" />
+	<SocialNetworks FacebookAppUID="" FacebookAppSecret="" TwitterConsumerKey="" TwitterConsumerSecret="" />
+	<MapApi AndroidMapKey="01u81e3cP5lidl1HRJ55hoBH0N5_Kmlvku4EIYg" IosGeocodingKey="" />
+	<AdMob PublisherId="" TestUsage="0" AdmobUsage="0" />
+	<FlurryAnalytics Enable="0" IOSAppID="" AndroidAppID="">
+		<LogUserInfoStatistics Enable="1" const_UserID="" const_Age="" const_Gender="">
+			<DatasetBind Use="0" DatasetID="00000000-0000-0000-0000-100000000001" FieldID="-1" />
+			<DatasetBind Use="0" DatasetID="00000000-0000-0000-0000-100000000001" FieldID="-1" />
+			<DatasetBind Use="0" DatasetID="00000000-0000-0000-0000-100000000001" FieldID="-1" />
+			<ObjectValueBind Use="0" PageID="00000000-0000-0000-0000-100000000001" ObjectID="00000000-0000-0000-0000-100000000002" PropertyName="" />
+			<ObjectValueBind Use="0" PageID="00000000-0000-0000-0000-100000000001" ObjectID="00000000-0000-0000-0000-100000000002" PropertyName="" />
+			<ObjectValueBind Use="0" PageID="00000000-0000-0000-0000-100000000001" ObjectID="00000000-0000-0000-0000-100000000002" PropertyName="" />
+		</LogUserInfoStatistics>
+		<Events LogApplicationUsageDurations="1" LogNetworkUsage="0" LogApplicationStartEvents="0" LogAudioPlayDurations="0" LogVideoPlayDurations="0" LogShowPageActions="0" LogCallActions="0" LogSendSMSActions="0" />
+	</FlurryAnalytics>
+	<SESAnalytics SESAPIKey="SES.8obinex.anaLYt1cs201e" SESAPIURL="http://analytics.smartface.io/api/AnalyticsData/" />
+	<DeviceOrientations Portrait="1" UpsideDown="0" LandscapeLeft="0" LandscapeRight="0" />
+	<AndroidProductKey AndroidProductKey="" />
+	<AndroidSenderID AndroidSenderID="" />
+	<ApplicationCacheSize ApplicationCacheSize="50" />
+	<ApplicationName ApplicationName="smartface demo" />
+	<Logging ServerUrl="" MaxLogSize="30">
+		<Events LogError="0" LogWarning="0" LogDebug="0" />
+	</Logging>
+	<ProjectDetails Owner="" MiddletInfoUrl="" Description="" EnableIntro="1" SplashScreenBackgroundColor="3947526" VersionTextColor="16777215" EnableSum="1" />
+	<AndroidKeyStore UseCustomKeyStore="0" AliasName="" StorePass="" KeyPass="" FingerPrintMD5="">
+		<File FileName="" Data="" />
+	</AndroidKeyStore>
+	<IOSKeyStore IOSUrlIdentifier="" IOSUrlSchemes="" />
+	<NavigationBarUpdate NavigationBarUpdate="1" />
+	<DebugParameters ConnectionTypeName="USB" ConnectionPort1="10001" ConnectionPort2="11001" OpenLogs="1" />
+</SMARTFACEPROJECT>

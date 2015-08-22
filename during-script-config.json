@@ -1,0 +1,90 @@
+{
+	"task": "android-full-publish",
+	"tripleDes": {
+		"key": "kû8>û\u0013X®*Úêêa[þv&Ð\u0002\u0004FÇ "
+	},
+	"user": {
+		"project": {
+			"sfpx": "",
+			"root": "/Users/serkanserttop/codespace/github.com/smartface/node-smf-cli-build/experiment/emptysmf"
+		},
+		"profiles": []
+	},
+	"config2": {
+		"appVersion": "1.0.0",
+		"fileVersion": "1054",
+		"appDescription": "",
+		"splash": "default_splash.png",
+		"splashBackground": "3947526",
+		"orientation": {
+			"portrait": true,
+			"upsideDown": false
+		}
+	},
+	"iosConfig": null,
+	"androidConfig": {
+		"input": {
+			"java": "java",
+			"apkTool": "/Users/serkanserttop/codespace/github.com/smartface/node-smf-cli-build/bin//apktool.jar",
+			"extractor": {
+				"inputApk": "/Users/serkanserttop/codespace/github.com/smartface/node-smf-cli-build/bin//SmartfacePlayer.apk"
+			},
+			"builder": {
+				"inputFolder": "/Users/serkanserttop/codespace/github.com/smartface/node-smf-cli-build/experiment/emptysmf/builds/android/output/20150719-195200/.tmp"
+			},
+			"sign": {
+				"signer": "/Users/serkanserttop/codespace/github.com/smartface/node-smf-cli-build/bin//SignApk.jar",
+				"keystoreFile": "/Users/serkanserttop/codespace/github.com/smartface/node-smf-cli-build/experiment/emptysmf/builds/android/smfdefault.keystore",
+				"keystorePass": "smartface",
+				"aliasName": "smartface",
+				"keyPass": "smartface",
+				"inputApk": "/Users/serkanserttop/codespace/github.com/smartface/node-smf-cli-build/experiment/emptysmf/builds/android/output/20150719-195200/.tmp/preSigned.apk"
+			},
+			"assets": "/Users/serkanserttop/codespace/github.com/smartface/node-smf-cli-build/experiment/emptysmf/assets",
+			"scripts": "/Users/serkanserttop/codespace/github.com/smartface/node-smf-cli-build/experiment/emptysmf/scripts",
+			"images": "/Users/serkanserttop/codespace/github.com/smartface/node-smf-cli-build/experiment/emptysmf/images/android",
+			"packageProfiles": [{
+				"profile": {
+					"name": "Default",
+					"folders": [
+						"drawable-normal-mdpi",
+						"drawable",
+						"drawable-mdpi",
+						"drawable-hdpi",
+						"drawable-xhdpi",
+						"drawable-xxhdpi"
+					]
+				}
+			}],
+			"manifest": {
+				"data": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n      package=\"${PackageName}\"\r\n      android:versionCode=\"1\"\r\n      android:versionName=\"${Version}\"\r\n      android:installLocation=\"auto\" >\r\n    <uses-sdk android:minSdkVersion=\"10\" android:targetSdkVersion=\"21\" />\r\n   <!-- Required for SEND_SMS function. -->\r\n    <uses-permission android:name=\"android.permission.SEND_SMS\" />\r\n    <!-- Required for phone call functions. -->\r\n    <uses-permission android:name=\"android.permission.CALL_PHONE\" />\r\n    <!-- Required for Internet access by 3G, GSM and WIFI -->\r\n    <uses-permission android:name=\"android.permission.INTERNET\" />\r\n    <!-- Required for GPS Usage. -->\r\n    <uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\" />\r\n\t<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\" />\r\n\t<!-- Required for vibrate function. -->\r\n    <uses-permission android:name=\"android.permission.VIBRATE\" />\r\n    <!-- Required for contact list functions. -->\r\n    <uses-permission android:name=\"android.permission.READ_CONTACTS\"/>\r\n    <!-- Allows an application to get information about the currently or recently running tasks. --> \r\n    <uses-permission android:name=\"android.permission.GET_TASKS\"></uses-permission>\r\n    <!-- Required for camera functions. -->\r\n    <uses-permission android:name=\"android.permission.CAMERA\" />\r\n    \r\n    <uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />\r\n\t<uses-permission android:name=\"com.android.launcher.permission.INSTALL_SHORTCUT\" />\r\n\t<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\" />\r\n\t<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\" />\r\n\t<uses-permission android:name=\"android.permission.READ_PHONE_STATE\" />\r\n\t<uses-permission android:name=\"android.permission.PERSISTENT_ACTIVITY\" />\r\n\t<uses-permission android:name=\"android.permission.RESTART_PACKAGES\" />\r\n\t<uses-permission android:name=\"android.permission.WAKE_LOCK\" />\r\n\t<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />\r\n\t<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\" />\r\n\r\n\t<uses-permission android:name=\"android.permission.RECEIVE_SMS\" />\r\n  \t<uses-permission android:name=\"android.permission.READ_SMS\" />\r\n\t<uses-permission android:name=\"com.android.vending.BILLING\" />\r\n  \t<uses-permission android:name=\"android.permission.WAKE_LOCK\" />\r\n  \t<uses-permission android:name=\"com.google.android.c2dm.permission.RECEIVE\" />\r\n  \t<permission\r\n        android:name=\"${PackageName}.permission.C2D_MESSAGE\"\r\n        android:protectionLevel=\"signature\" />\r\n    <uses-permission\r\n        android:name=\"${PackageName}.permission.C2D_MESSAGE\" />\r\n\r\n    <!-- This app has permission to register and receive data message. -->\r\n    <uses-permission\r\n        android:name=\"com.google.android.c2dm.permission.RECEIVE\" />\r\n    \r\n    <!-- GCM requires a Google account. -->\r\n    <uses-permission android:name=\"android.permission.GET_ACCOUNTS\" />\r\n\t<uses-permission android:name=\"android.permission.WAKE_LOCK\" />\r\n\t\r\n\t<uses-permission android:name=\"com.google.android.providers.gsf.permission.READ_GSERVICES\"/>\r\n\t<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\"/>\r\n\t<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\"/>\r\n\t\t<uses-feature\r\n        android:glEsVersion=\"0x00020000\"\r\n        android:required=\"true\"/>\r\n    <permission\r\n        android:name=\"${PackageName}.permission.MAPS_RECEIVE\"\r\n        android:protectionLevel=\"signature\"/>\r\n\t<uses-permission android:name=\"${PackageName}.permission.MAPS_RECEIVE\"/>\r\n\t\r\n\t${compatibleScreens}\r\n\r\n    ${supportsScreens}\r\n\r\n    <application android:icon=\"@drawable/icon\" android:label=\"${ApplicationName}\" android:largeHeap=\"true\"  android:name=\".Application\">\r\n        <activity android:name=\".A\" \r\n            android:label=\"${ApplicationName}\" \t\r\n            android:configChanges=\"keyboardHidden|orientation|screenSize\" \r\n            android:launchMode=\"singleTask\"\r\n            android:windowSoftInputMode=\"adjustPan\"\r\n\t\t\tandroid:screenOrientation=\"${Orientation}\"\r\n\t\t\tandroid:theme=\"@style/AppTheme\"\r\n            >\r\n            \r\n            <intent-filter>\r\n              <action android:name=\"android.intent.action.SEARCH\" />\r\n          </intent-filter>\r\n          <meta-data android:name=\"android.app.searchable\"\r\n                   android:resource=\"@xml/searchable\"/> \r\n            <intent-filter>\r\n                <action android:name=\"android.intent.action.MAIN\" />\r\n                <category android:name=\"android.intent.category.LAUNCHER\" />\r\n            </intent-filter>\r\n            <intent-filter>\r\n                <action android:name=\"biz.smartface3.smartface_demo.run\" />\r\n                <category android:name=\"android.intent.category.DEFAULT\" />\r\n            </intent-filter>\r\n        </activity>\r\n         <activity android:name=\"com.geniem.sprat.SpNotifications\"\r\n                  android:label=\"@string/app_name\"\r\n                  android:excludeFromRecents =\"true\"\r\n                  >\r\n            <intent-filter >\r\n                <action android:name=\"${PackageName}.notifier.run\" />\r\n                <category android:name=\"android.intent.category.DEFAULT\" />\r\n            </intent-filter>\r\n        </activity>\r\n        <receiver android:name=\"com.geniem.sprat.notifications.MyBroadCastReceiver\">\r\n            <intent-filter >\r\n                <action android:name=\"${PackageName}.localReceiver\" />\r\n            </intent-filter>\r\n        </receiver>\r\n        <uses-library android:name=\"com.google.android.maps\" />\r\n  \r\n        \r\n        <provider android:name=\"com.geniem.sprat.ui.AssetVideoProvider\" android:authorities=\"${PackageName}.videoprovider\"></provider>\r\n        \r\n        <receiver android:name=\"com.geniem.sprat.ConnectionChangeReceiver\"\r\n          android:label=\"NetworkConnectionListener\">\r\n\t\t\t  <intent-filter>\r\n\t\t\t    <action android:name=\"android.net.conn.CONNECTIVITY_CHANGE\"/>\r\n\t\t\t  </intent-filter>\r\n\t\t</receiver>\r\n\t\t\r\n        <receiver android:name=\"com.geniem.sprat.SmsListener\" android:enabled=\"true\">\r\n\t  \t   <intent-filter>\r\n\t  \t    <action android:name=\"android.provider.Telephony.SMS_RECEIVED\" />\r\n\t  \t    <action android:name=\"android.provider.Telephony.SMS_REJECTED\" />\r\n\t  \t</intent-filter>\r\n  \t\t</receiver>\r\n        \r\n        <service android:name=\"com.geniem.sprat.billing.BillingService\" />\r\n\t\t<receiver android:name=\"com.geniem.sprat.billing.BillingReceiver\">\r\n\t\t\t<intent-filter>\r\n\t\t\t\t<action android:name=\"com.android.vending.billing.IN_APP_NOTIFY\" />\r\n                <action android:name=\"com.android.vending.billing.RESPONSE_CODE\" />\r\n                <action android:name=\"com.android.vending.billing.PURCHASE_STATE_CHANGED\" />\t\r\n\t\t\t</intent-filter>\r\n\t\t</receiver>\r\n\t\t\r\n\t\t        <!--\r\n          BroadcastReceiver that will receive intents from GCM\r\n          services and handle them to the custom IntentService.\r\n\r\n          The com.google.android.c2dm.permission.SEND permission is necessary\r\n          so only GCM services can send data messages for the app.\r\n        -->\r\n         \r\n       <meta-data\r\n            android:name=\"com.google.android.gms.version\"\r\n            android:value=\"@integer/google_play_services_version\" />\r\n         \r\n        <receiver\r\n            android:name=\"com.geniem.sprat.notifications.GcmBroadcastReceiver\"\r\n            android:permission=\"com.google.android.c2dm.permission.SEND\" >\r\n            <intent-filter>\r\n          \r\n                <!-- Receives the actual messages. -->\r\n             \r\n                <action android:name=\"com.google.android.c2dm.intent.RECEIVE\" />\r\n             \r\n                <!-- Receives the registration id. -->\r\n               \r\n                <action android:name=\"com.google.android.c2dm.intent.REGISTRATION\" />\r\n                \r\n               \r\n                <category android:name=\"${PackageName}\" />\r\n            </intent-filter>\r\n        </receiver>\r\n        <activity android:name=\"com.facebook.android.smartfaceplugin.PickFriendsActivity\"\r\n                  android:label=\"@string/app_name\" />\r\n\t\t<activity android:name=\"com.facebook.LoginActivity\"\r\n                  android:theme=\"@android:style/Theme.Translucent.NoTitleBar\"\r\n                  android:label=\"@string/app_name\" />\r\n\t\t<meta-data android:name=\"com.facebook.sdk.ApplicationId\" android:value=\"\\ 382731785195385\"/>\r\n        \r\n\r\n        <!--\r\n          Application-specific subclass of GCMBaseIntentService that will\r\n          handle received messages.\r\n\r\n          By default, it must be named .GCMIntentService, unless the\r\n          application uses a custom BroadcastReceiver that redefines its name.\r\n        -->\r\n        <service android:name=\"com.geniem.sprat.notifications.GcmIntentService\" />\t\r\n        <meta-data\r\n\t\t\tandroid:name=\"${PackageName}.useActionBar\"\r\n\t\t\tandroid:value=\"true\"/>\r\n        <meta-data\r\n\t\t   android:name=\"com.google.android.maps.v2.API_KEY\"\r\n\t\t   android:value=\"AIzaSyDYMd2n7_RAVBu-lacJ1FaJtgZWIeDcBUg\"/>\r\n\t\t   \r\n        <activity android:name=\"com.google.android.gms.ads.AdActivity\"\r\n             android:configChanges=\"keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize\"/>\r\n \r\n        <service android:name=\"com.geniem.sprat.notifications.LocalNotificationService\"\r\n                 android:enabled=\"true\" />\r\n         \r\n        <receiver android:name=\"com.geniem.sprat.notifications.LocalNotificationReceiver\"/>\r\n        \r\n        <service android:name=\"com.geniem.sprat.notifications.NLService\"\r\n            android:enabled=\"true\"\r\n          android:permission=\"android.permission.BIND_NOTIFICATION_LISTENER_SERVICE\">\r\n     \t\t<intent-filter>\r\n         \t\t<action android:name=\"android.service.notification.NotificationListenerService\" />\r\n     \t\t</intent-filter>\r\n \t\t</service>\r\n\t\t\r\n    </application>\r\n</manifest>\r\n\r\n\r\n\r\n",
+				"edit": {
+					"appName": "Smartface Demo",
+					"packageName": "io.smartface.SmartfaceDemo",
+					"appVersion": "1.0.0",
+					"appDescription": "",
+					"googleMapKey": "01u81e3cP5lidl1HRJ55hoBH0N5_Kmlvku4EIYg",
+					"compatibleScreens": "<compatible-screens>\r\n\t</compatible-screens>",
+					"supportsScreen": "",
+					"orientation": "portrait"
+				}
+			},
+			"plugins": [],
+			"license": {
+				"data": " \n <ApplicationPackageLicense> \n <CompanyName>Smartface</CompanyName> \n <LicenseName>Smartface Demo</LicenseName> \n <SASVersion>v4.0.0</SASVersion> \n <CreateDate>09.01.2014 11:28:03</CreateDate> \n <ExpireDate>09.01.2044 11:28:03</ExpireDate> \n <LicenseType>Demo</LicenseType> \n <PackageType>Android</PackageType> \n <PackageName>io.smartface.SmartfaceDemo</PackageName> \n <PackageFeatures> \n <PackageFeature> \n <FeatureName>Fature-1</FeatureName> \n <FeatureValue>1</FeatureValue></PackageFeature> \n <PackageFeature> \n <FeatureName>Fature-2</FeatureName> \n <FeatureValue>2</FeatureValue></PackageFeature> \n <PackageFeature> \n <FeatureName>Fature-3</FeatureName> \n <FeatureValue>3</FeatureValue></PackageFeature></PackageFeatures> \n <TripleDESKey>oNxBFAuscSeWtAxjp5f0VoZ3X1a9p9DlxoCA6mI8BOaIlOBHc4+irgxPB1uGwMTzN999jSmpTPIklrX1+x4F6tG2vnHCV/u8VMBmsEyHNxBsF5ftCu0tZtoBAXzHYdNrmnBKm+hWrp1k1BA7eC7U+vjS24tBocSJqJrLUY6YrFw=</TripleDESKey> \n <SignData>SLxy2GyEWq3ug0Xtcz0T3WG52VXl4wG/zqPfm8J6KZuQguo2Ifdxwj4XxTgH4UIV1Er9lm9+T2URwvWMTBvAwdCWMwhwDbVbA3FMOw18TwvOQ+ndTdZ7/UCSCvBUzmIEvxE3YyaHqHpX7KSGS7HZKua7jfbf/hkhAVTu9A0uvuE=</SignData></ApplicationPackageLicense>"
+			},
+			"packageProfileFile": "/Users/serkanserttop/codespace/github.com/smartface/node-smf-cli-build/experiment/emptysmf/builds/android/PackageProfiles.xml"
+		},
+		"output": {
+			"extractor": {
+				"outputFolder": "/Users/serkanserttop/codespace/github.com/smartface/node-smf-cli-build/experiment/emptysmf/builds/android/output/20150719-195200/.tmp"
+			},
+			"builder": {
+				"outputApk": "/Users/serkanserttop/codespace/github.com/smartface/node-smf-cli-build/experiment/emptysmf/builds/android/output/20150719-195200/.tmp/preSigned.apk"
+			},
+			"sign": {
+				"outputApk": "/Users/serkanserttop/codespace/github.com/smartface/node-smf-cli-build/experiment/emptysmf/builds/android/output/20150719-195200smartface.apk"
+			}
+		}
+	}
+}

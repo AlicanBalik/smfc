@@ -1,0 +1,186 @@
+{
+	"usage": "smfc [options]",
+	"description": "Smartface Command-Line Interface",
+	"options": {
+		"help": {
+			"short": "-h",
+			"long": "--help",
+			"value": "<options or tasks>",
+			"description": "output usage information of options",
+			"deepDescription": "output usage information of options",
+			"example": "smfc --help=task"
+		},
+		"interactive": {
+			"short": "-i",
+			"long": "--interactive",
+			"value": "",
+			"description": "Smartface Command-Line Interface via interactive mode",
+			"deepDescription": "Smartface Command-Line Interface via interactive mode",
+			"example": "smfc -i"
+		},
+		"task": {
+			"short": "-t",
+			"long": "--task",
+			"value": "<task>",
+			"description": "task that will be run",
+			"deepDescription": "task that will be run",
+			"example": "--task=android-full-publish"
+		},
+		"projectRoot": {
+			"short": "-r",
+			"long": "--projectRoot",
+			"value": "<root path>",
+			"description": "your project main folder",
+			"deepDescription": "your project main folder",
+			"example": "--projectRoot=../smfc-sample"
+		},
+		"outputRoot": {
+			"short": "-o",
+			"long": "--outputRoot",
+			"value": "<out path>",
+			"description": "folder of your apk or zip file ",
+			"deepDescription": "folder of your apk or zip file",
+			"example": "--outputRoot=/home/smartface/out"
+		},
+		"license": {
+			"short": "-l",
+			"long": "--license",
+			"value": "<license file path>",
+			"description": "your license file",
+			"deepDescription": "your license file",
+			"example": "--license=C:/Users/user/license.xml"
+		},
+		"java": {
+			"short": "-j",
+			"long": "--java",
+			"value": "<java exec path>",
+			"description": "Java 1.7 wil be needed to apk operations",
+			"deepDescription": "Java 1.7 wil be needed to apk operations(decompile, compile, sign)",
+			"example": "--java=java"
+		},
+		"playerArm": {
+			"short": "-a",
+			"long": "--inputApk",
+			"value": "<player arm apk>",
+			"description": "Smartface Player apk for ARM",
+			"deepDescription": "Smartface Player apk for ARM",
+			"example": "--inputApk=bin/SmartfacePlayer.apk"
+		},
+		"playerx86": {
+			"short": "-x",
+			"long": "--inputApkx86",
+			"value": "<player x86 apk>",
+			"description": "Smartface Player apk for x86",
+			"deepDescription": "Smartface Player apk for x86",
+			"example": "--inputApkx86=bin/SmartfacePlayer-x86.apk"
+		},
+		"inputZip": {
+			"short": "-z",
+			"long": "--inputZip",
+			"value": "<ios player>",
+			"description": "Smartface Player zip for iOS",
+			"deepDescription": "Smartface Player zip for iOS",
+			"example": "--inputZip=bin/SmartfacePlayer.zip"
+		},
+		"profile": {
+			"short": "-p",
+			"long": "--profile",
+			"value": "<profiles>",
+			"description": "ARM or x86 profiles that will be published ",
+			"deepDescription": "ARM or x86 profiles that will be published ( Default, mdpi, hdpi, ...)",
+			"example": "--profile=arm:hdpi;x86:*"
+		},
+		"maxJavaMemory": {
+			"short": "-m",
+			"long": "--maxJavaMemory",
+			"value": "<memory size>",
+			"description": "Java to be used max memory while running. ",
+			"deepDescription": "Java to be used max memory while running.",
+			"example": "--maxJavaMemory=1024m"
+		},
+		"logLevel": {
+			"short": "-l",
+			"long": "--logLevel",
+			"value": "<level>",
+			"description": "level of log",
+			"deepDescription": "level of log, you can logging and control log file.",
+			"example": "--logLevel=debug"
+		},
+		"logFile": {
+			"short": "-f",
+			"long": "--logFile",
+			"value": "<file path>",
+			"description": "file of specific ",
+			"deepDescription": "You can logging into the file.",
+			"example": "--logFile=../smfc-sample/log/smfc.log"
+		},
+		"logStdOut": {
+			"short": "-O",
+			"long": "--logStdOut",
+			"value": "<status>",
+			"description": "log on console",
+			"deepDescription": "You can logging on the console.",
+			"example": "--logStdOut=true"
+		}
+	},
+	"authentication": {
+		"login": "Login for your licenses",
+		"loguot": "Logout from cli, You can use only demo license",
+		"description": " You can login to smartface Cli"
+	},
+	"help": {
+		"short": "-h",
+		"long": "--help",
+		"value": "",
+		"description": "output usage information",
+		"example": "smfc -h"
+	},
+	"color": {
+		"options": "green",
+		"assign": "gray",
+		"value": "cyan",
+		"description": "white"
+	},
+	"task": {
+		"android-full-publish": {
+			"necessary": [
+				"task",
+				"projectRoot"
+			],
+			"optional": [
+				"outputRoot",
+				"license",
+				"profile",
+				"java",
+				"inputApk",
+				"inputApkx86",
+				"plugin",
+				"maxJavaMemory",
+				"logLevel",
+				"logFile",
+				"logStdOut"
+			],
+			"description": "Publish for android",
+			"deepDescription": "Publish for android",
+			"example": "smfc --task=android-full-publish --projectRoot=../smfc-sample",
+			"advancedExample": "smfc --task=android-full-publish --projectRoot=../smfc-sample --outputRoot=../smfc-sample/output --logLevel=debug --LogFile=../smfc-sample/log/android.log --maxJavaMemory=512m --profile=arm:Default;x86:hdpi"
+		},
+		"ios-full-publish": {
+			"necessary": [
+				"task",
+				"projectRoot"
+			],
+			"optional": [
+				"outputRoot",
+				"license",
+				"logLevel",
+				"logFile",
+				"logStdOut"
+			],
+			"description": " Publish for ios",
+			"deepDescription": "Publish for ios",
+			"example": "smfc --task=ios-full-publish --projectRoot=../smfc-sample",
+			"advancedExample": "smfc --task=ios-full-publish --projectRoot=../smfc-sample --outputRoot=../smfc-sample/output --logLevel=debug --LogFile=../smfc-sample/log/ios.log "
+		}
+	}
+}

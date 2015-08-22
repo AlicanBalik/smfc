@@ -1,0 +1,127 @@
+ {
+ 	"task": {
+ 		"type": "list",
+ 		"name": "task",
+ 		"message": "Which task that you want to be run",
+ 		"default": "$$task",
+ 		"description": "task"
+ 	},
+ 	"workspace": {
+ 		"type": "list",
+ 		"name": "workSpaceType",
+ 		"message": "Which type of workspace that you want to be published ?",
+ 		"default": "$$workSpaceType",
+ 		"description": "workspace type"
+ 	},
+ 	"java": {
+ 		"type": "input",
+ 		"name": "java",
+ 		"message": "Enter Java 1.7 path",
+ 		"default": "$$java",
+ 		"description": "Java 1.7"
+ 	},
+ 	"outputRoot": {
+ 		"type": "input",
+ 		"name": "outputRoot",
+ 		"message": "Enter output root",
+ 		"default": "$$outputRoot",
+ 		"description": "output root"
+ 	},
+ 	"license": {
+ 		"type": "list",
+ 		"name": "license",
+ 		"message": "select license",
+ 		"default": "$$license",
+ 		"description": "license"
+ 	},
+ 	"profiles": {
+ 		"type": "checkbox",
+ 		"name": "profiles",
+ 		"message": "select profiles",
+ 		"default": "$$profile",
+ 		"description": "profiles"
+ 	},
+ 	"projectRoot": {
+ 		"type": "input",
+ 		"name": "projectRoot",
+ 		"message": "Enter project root folder",
+ 		"default": "$$projectRoot",
+ 		"description": "project root"
+ 	},
+ 	"playerArm": {
+ 		"type": "input",
+ 		"name": "playerArm",
+ 		"message": "Enter input apk file for ARM",
+ 		"default": "$$playerArm",
+ 		"description": "Player - ARM"
+ 	},
+ 	"playerx86": {
+ 		"type": "input",
+ 		"name": "playerx86",
+ 		"message": "Enter input apk file for x86",
+ 		"default": "$$playerx86",
+ 		"description": "Player - x86"
+ 	},
+ 	"plugin": {
+ 		"confirm": {
+ 			"type": "confirm",
+ 			"name": "plugin",
+ 			"default": "$$plugin",
+ 			"message": "Do you want to add any plugin",
+ 			"description": "Plugin"
+ 		},
+ 		"name": {
+ 			"type": "input",
+ 			"name": "pluginName",
+ 			"message": "Enter plugin name",
+ 			"default": "",
+ 			"description": "Plugin name"
+ 		},
+ 		"path": {
+ 			"type": "input",
+ 			"name": "pluginPath",
+ 			"message": "Enter plugin path",
+ 			"default": "",
+ 			"description": "Plugin path"
+ 		},
+ 		"more": {
+ 			"type": "confirm",
+ 			"name": "plugin",
+ 			"default": "$$plugin",
+ 			"message": "Would you like to add one more plugin",
+ 			"description": "Plugin"
+ 		},
+ 		"description": "Plugin"
+ 	},
+ 	"login": {
+ 		"username": {
+ 			"type": "input",
+ 			"name": "name",
+ 			"message": "username",
+ 			"description": "login name"
+ 		},
+ 		"password": {
+ 			"type": "password",
+ 			"message": "password",
+ 			"name": "password",
+ 			"description": "login password"
+ 		},
+ 		"description": "login"
+ 	},
+ 	"logout": {
+ 		"type": "confirm",
+ 		"name": "logout",
+ 		"message": "Do you really want to logout",
+ 		"description": "logout"
+ 	},
+ 	"sampleProjects": {
+ 		"download": "download new sample project",
+ 		"available": {
+ 			"type": "list",
+ 			"name": "availableSample",
+ 			"message": "Select one of available projects for installing",
+ 			"description": "Available sample projects"
+ 		},
+ 		"description": "sample projects"
+ 	}
+ }

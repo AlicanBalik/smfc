@@ -1,0 +1,55 @@
+<ApplicationPackageLicenses>
+	<ApplicationPackageLicense>
+		<CompanyName>Smartface</CompanyName>
+		<LicenseName>Smartface Demo</LicenseName>
+		<SASVersion>v4.0.0</SASVersion>
+		<CreateDate>09.01.2014 11:28:03</CreateDate>
+		<ExpireDate>09.01.2044 11:28:03</ExpireDate>
+		<LicenseType>Demo</LicenseType>
+		<PackageType>Android</PackageType>
+		<PackageName>io.smartface.SmartfaceDemo</PackageName>
+		<PackageFeatures>
+			<PackageFeature>
+				<FeatureName>Fature-1</FeatureName>
+				<FeatureValue>1</FeatureValue>
+			</PackageFeature>
+			<PackageFeature>
+				<FeatureName>Fature-2</FeatureName>
+				<FeatureValue>2</FeatureValue>
+			</PackageFeature>
+			<PackageFeature>
+				<FeatureName>Fature-3</FeatureName>
+				<FeatureValue>3</FeatureValue>
+			</PackageFeature>
+		</PackageFeatures>
+		<TripleDESKey>oNxBFAuscSeWtAxjp5f0VoZ3X1a9p9DlxoCA6mI8BOaIlOBHc4+irgxPB1uGwMTzN999jSmpTPIklrX1+x4F6tG2vnHCV/u8VMBmsEyHNxBsF5ftCu0tZtoBAXzHYdNrmnBKm+hWrp1k1BA7eC7U+vjS24tBocSJqJrLUY6YrFw=</TripleDESKey>
+		<SignData>SLxy2GyEWq3ug0Xtcz0T3WG52VXl4wG/zqPfm8J6KZuQguo2Ifdxwj4XxTgH4UIV1Er9lm9+T2URwvWMTBvAwdCWMwhwDbVbA3FMOw18TwvOQ+ndTdZ7/UCSCvBUzmIEvxE3YyaHqHpX7KSGS7HZKua7jfbf/hkhAVTu9A0uvuE=</SignData>
+	</ApplicationPackageLicense>
+	<ApplicationPackageLicense>
+		<CompanyName>Smartface</CompanyName>
+		<LicenseName>Smartface Demo</LicenseName>
+		<SASVersion>v4.0.0</SASVersion>
+		<CreateDate>09.01.2014 11:28:04</CreateDate>
+		<ExpireDate>09.01.2044 11:28:04</ExpireDate>
+		<LicenseType>Demo</LicenseType>
+		<PackageType>iOS</PackageType>
+		<PackageName>io.smartface.SmartfaceDemo</PackageName>
+		<PackageFeatures>
+			<PackageFeature>
+				<FeatureName>Fature-1</FeatureName>
+				<FeatureValue>1</FeatureValue>
+			</PackageFeature>
+			<PackageFeature>
+				<FeatureName>Fature-2</FeatureName>
+				<FeatureValue>2</FeatureValue>
+			</PackageFeature>
+			<PackageFeature>
+				<FeatureName>Fature-3</FeatureName>
+				<FeatureValue>3</FeatureValue>
+			</PackageFeature>
+		</PackageFeatures>
+		<TripleDESKey>oNxBFAuscSeWtAxjp5f0VoZ3X1a9p9DlxoCA6mI8BOaIlOBHc4+irgxPB1uGwMTzN999jSmpTPIklrX1+x4F6tG2vnHCV/u8VMBmsEyHNxBsF5ftCu0tZtoBAXzHYdNrmnBKm+hWrp1k1BA7eC7U+vjS24tBocSJqJrLUY6YrFw=</TripleDESKey>
+		<SignData>Yeao35PgVinjpmuZNt+FYJIZgEOlZrD259em6fQ10ed+KFaS/jPEh3b6dieNDGM7ZhU2+p1u0tR1V0RYylU8ZXP1VaJorJFgH0l5Az7NhaE8r4JOfrivXo3fpLJiDFphPUozjtH3Z96oe0VSe/pJAEVUmskEWvtve6bZmqHXdbk=</SignData>
+	</ApplicationPackageLicense>
+	<TripleDESKeyValue>a/s4PvsTWK4q2urqYVv+dibQjwIERscg</TripleDESKeyValue>
+</ApplicationPackageLicenses>

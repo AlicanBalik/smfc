@@ -1,0 +1,38 @@
+#!/usr/bin/env node
+
+var rmdir = require('rmdir');
+var args = require('minimist')(process.argv.slice(2));
+var _ = require('underscore');
+
+var utility = require('../utility');
+
+function clean() {
+	if (args.folder) {
+		var folders = args.folder;
+		if (!_.isArray(folders)) {
+			folders = [folders];
+		}
+		cleanAllFolder(folders, function() {
+			// complete  cleaned all folders.
+		});
+	}
+}
+
+function cleanOne(_folder, callback) {
+	if (utility.safeControlDirectory(_folder)) {
+		rmdir(_folder, callback);
+	}
+}
+
+function cleanAllFolder(_folders, callback) {
+	if (_folders.length === 0) {
+		callback();
+		return;
+	}
+	var item = _folders.shift();
+	cleanOne(item, function() {
+		cleanAllFolder(_folders, callback);
+	});
+}
+
+clean();
