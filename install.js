@@ -15,11 +15,12 @@ if (process.env.npm_lifecycle_event === 'preuninstall') {
 function handlePreUninstall() {
 	var packageJson = require('./package.json');
 	var downloadFiles = getDownloadFilesFromPackageJsonObject(packageJson);
+	console.log(__dirname);
 	fs.mkdir(TMP_ROOT, function(e) {
 		if (!e || (e && e.code === 'EEXIST')) {
-			var files = getFilesWithNewRoot(downloadFiles, ENV.PWD + '/bin/');
+			var files = getFilesWithNewRoot(downloadFiles, __dirname + '/bin/');
 			moveAllFilesToNewRoot(files, TMP_ROOT);
-			var packageJsonString = fs.readFileSync(ENV.PWD + '/package.json');
+			var packageJsonString = fs.readFileSync(__dirname + '/package.json');
 			fs.writeFileSync(TMP_ROOT + '/package.json', packageJsonString);
 		} else {
 			console.log('Could not create temp folder at:' + TMP_ROOT, e);
@@ -50,14 +51,14 @@ function handlePostInstall() {
 	for (var i = 0; i < filesToMove.length; i++) {
 		var file = filesToMove[i];
 		var basename = path.basename(file);
-		if (!moveIfExists(TMP_ROOT + basename, ENV.PWD + '/bin/' + basename)) {
+		if (!moveIfExists(TMP_ROOT + basename, __dirname + '/bin/' + basename)) {
 			filesToDownload.push(file);
 		} else {
 			console.log('No need to download a new version of: ' + basename);
 		}
 	}
 
-	downloadFiles(filesToDownload, ENV.PWD + '/bin/', function() {
+	downloadFiles(filesToDownload, __dirname + '/bin/', function() {
 		console.log('All required files are downloaded');
 	});
 }

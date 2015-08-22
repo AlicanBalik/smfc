@@ -51,7 +51,7 @@
 			"signApk": "http://az793023.vo.msecnd.net/smartface-bin/SignApk/smartface-4.4.0/SignApk.jar",
 			"iOS": "http://az793023.vo.msecnd.net/smartface-bin/runtime/4.3.1/iOS_Player.zip",
 			"zipalign": {
-				"win": "http://az793023.vo.msecnd.net/smartface-bin/zipaligntool/smartface-4.4.0/zipalign.exe"
+				"win32": "http://az793023.vo.msecnd.net/smartface-bin/zipaligntool/smartface-4.4.0/zipalign.exe"
 			}
 		}
 	}
