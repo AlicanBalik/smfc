@@ -1,4 +1,4 @@
-# node-smf-cli-build 
+# Smartface CLI Tool
 
 This Node.js project handles the publishing process of the Smartface Framework.
 
@@ -30,13 +30,13 @@ If you want to publish, you must pass these arguments
     --task=$(TASK) , --task=android-full-publish
     
 - <b>projectRoot</b>
-  Your project main folder. You can also use relative paths.
+  Your project root folder. You can also use relative paths.
 
 ###### Example projectRoot
     --projectRoot=$(PROJECT_ROOT) , --projectRoot=../smfc-sample
     
 ### Optional parameters
-You can use optional parameters not necessary.
+You can use optional parameters.
 - <b>license</b>
    Your license file path
 
@@ -44,25 +44,25 @@ You can use optional parameters not necessary.
     --license=$(LICENSE) , --license=/home/Smartface/license.xml
   
 - <b>java</b>
-   Java 1.7 wil be needed to apk operations. if you not set this parameter, we can find java 1.7
+   Java 1.7 wil be needed for the apk file operations. If you do not set this parameter, the tool will try to find Java 1.7, and use that version if it can find one.
 
 ###### Example java
     --java=$(JAVA) , --java=/usr/bin/java
   
 - <b>inputApk</b>
-   Smartface Player apk for ARM. You can set one of the arm-players of smartface.
+   Smartface Player apk for ARM. You can set one of the arm-players of Smartface.
 
 ###### Example inputApk  
     --inputApk=$(INPUT_APK) , --inputApk=/home/Smartface/SmartfacePlayer.apk
  
  - <b>inputApkx86</b>
-   Smartface Player apk for x86. You can set one of the x86-players of smartface.
+   Smartface Player apk for x86. You can set one of the x86-players of Smartface.
 
 ###### Example inputApkx86 
     --inputApkx86=$(INPUT_APK_x86) , --inputApkx86=/home/Smartface/SmartfacePlayer-x86.apk
  
  - <b>inputZip</b>
-   Smartface Player zip for iOS. You can set one of the ios-players of smartface.
+   Smartface Player zip file for iOS. You can set one of the iOS-players of Smartface.
 
 ###### Example inputZip 
     --inputZip=$(INPUT_ZIP) , --inputZip=/home/Smartface/SmartfacePlayer.zip
