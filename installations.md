@@ -6,19 +6,17 @@
 
 ### Install
 
-Smartface installations  on windows platforms
-
-install node.js & npm
+install [node.js](https://nodejs.org/download)
 
 - Node.js & Npm
 
 get sources.
 
-- ``git clone https://github.com/SmartfaceIO/node-smf-cli-build.git``
+- ``git clone https://github.com/SmartfaceIO/smfc.git``
 
-go folder in node-smf-cli-build. 
+go folder in smfc. 
 
--  ``cd ${...}/node-smf-cli-build``
+-  ``cd ${...}/smfc``
 
 Now, ready for install.
 
@@ -26,15 +24,11 @@ Now, ready for install.
 You can see solution
 [fixing-npm-permissions](https://docs.npmjs.com/getting-started/fixing-npm-permissions)
  
-#### Basic Install
-
-- ``npm install``
-
-#### Globally Install
+#### Install
 
 - ``npm i -g --production``
 
-#### only Linux ( Ubuntu )
+#### Linux ( Ubuntu )
  ApkTool completely works on 64bit machines , you will need to install these libs:
 - ``sudo -i``
 - ``cd /etc/apt/sources.list.d``
@@ -45,17 +39,11 @@ You can see solution
 
 You can start using
 
-##### for Basic
-
-- ``node bin/global-exec [params]``
-
-You should be sure in folder node-smf-cli-build
-
-##### for Globally
+##### Usage
 
 - ``smfc --help``
 
-You can use in any directory.
+You can see more informations of usage.
 
 
 
