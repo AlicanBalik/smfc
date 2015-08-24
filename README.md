@@ -1,17 +1,16 @@
 # Smartface CLI Tool
 
-This Node.js project handles the publishing process of the Smartface Framework.
+This [Node.js](https://nodejs.org/) project handles the publishing process of the Smartface Framework.
 
 Other features will be integrated in the future, such as emulator, drag&drop interface integration and possibly more.
 
-#How to Contribute
-
-Please check the `Coding Guidelines.md` file.
+[![NPM](https://nodei.co/npm/smartface.png)](https://nodei.co/npm/smartface/)
 
 # Install
-  
-    npm install smartface
+    npm install smartface -g --production
     
+If you want install from sources, you can check [installations.md](https://github.com/SmartfaceIO/smfc/blob/master/installations.md)
+
 # Usage
 You can see more informations to use.
 
