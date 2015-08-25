@@ -6,6 +6,11 @@ Other features will be integrated in the future, such as emulator, drag&drop int
 
 [![NPM](https://nodei.co/npm/smartface.png)](https://nodei.co/npm/smartface/)
 
+# Requirements
+ Node.js & Npm 
+
+[Click to install node.js](https://nodejs.org/download)
+
 # Install
     npm install smartface -g --production
     
