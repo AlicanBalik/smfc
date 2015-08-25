@@ -16,7 +16,7 @@ get sources.
 
 go folder in smfc. 
 
--  ``cd ${...}/smfc``
+-  ``cd smfc``
 
 Now, ready for install.
 
@@ -43,7 +43,7 @@ You can start using
 
 - ``smfc --help``
 
-You can see more informations of usage.
+You can see more informations of [usage](https://github.com/SmartfaceIO/smfc/raw/master/Smartface-cli-tool-Usage.pdf).
 
 
 
