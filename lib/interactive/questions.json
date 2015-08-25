@@ -62,6 +62,13 @@
  		"default": "$$playerx86",
  		"description": "Player - x86"
  	},
+ 	"playeriOS": {
+ 		"type": "input",
+ 		"name": "playeriOS",
+ 		"message": "Enter input zip file for iOS player",
+ 		"default": "$$playeriOS",
+ 		"description": "Player - iOS"
+ 	},
  	"plugin": {
  		"confirm": {
  			"type": "confirm",
