@@ -33,8 +33,8 @@ function cli(args) {
 		if (SHOULD_LOG) {
 			logger.fatal('Unknown Task : ' + args.task);
 		}
-		err.err = 'Unknown Task';
-		err.message = 'Unknown Task : ' + args.task;
+		err.err = 'Task Error';
+		err.msg = 'Unknown Task : ' + args.task;
 	}
 
 	if (!args.platform || ['c9', 'win32', 'darwin', 'linux'].indexOf(args.platform) === -1) {
@@ -42,7 +42,7 @@ function cli(args) {
 	}
 
 	if (err.err !== '') {
-		process.stdout.write(JSON.stringify(err));
+		utility.writeJsonToStdout(err);
 		process.exit(err.err);
 	}
 
