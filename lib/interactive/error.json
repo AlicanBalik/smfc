@@ -23,6 +23,11 @@
 		"network": "network error",
 		"existing": "existing error",
 		"child": "child error"
-	}
+	},
+	"apkTool": {
+		"extractor": "apktool extractor error",
+		"builder": "apktool builder error"
+	},
+	"signer": "signer error"
 
 }
