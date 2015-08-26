@@ -18,8 +18,6 @@
 				"AndroidSenderID",
 				"ApplicationCacheSize",
 				"LogServerUrl",
-				"SESAPIKey",
-				"SESAPIURL",
 				"UUID"
 			]
 		}, {
@@ -133,10 +131,12 @@
 				"Type",
 				"BgTparent",
 				"ShwStatusBar",
+				"StatusBarTransparent",
 				"EnableTabBar",
 				"LockOrientation",
 				"IsTemplatePage",
 				"IsSplashScreen",
+				"ShiftObjectsDown",
 				"TouchEnabled",
 				"UsesTemplatePage",
 				"ShwNavigationBar",
