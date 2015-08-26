@@ -45,11 +45,11 @@
 	},
 	"smartface_meta": {
 		"binaries": {
-			"x86": "http://az793023.vo.msecnd.net/smartface-bin/runtime/4.3.1/SmartfacePlayer-x86.apk",
-			"ARM": "http://az793023.vo.msecnd.net/smartface-bin/runtime/4.3.1/SmartfacePlayer.apk",
+			"x86": "http://az793023.vo.msecnd.net/smartface-bin/runtime/4.4.0/SmartfacePlayer-x86.apk",
+			"ARM": "http://az793023.vo.msecnd.net/smartface-bin/runtime/4.4.0/SmartfacePlayer.apk",
 			"apktool": "http://az793023.vo.msecnd.net/smartface-bin/apktool/smartface-4.4.0/apktool.jar",
 			"signApk": "http://az793023.vo.msecnd.net/smartface-bin/SignApk/smartface-4.4.0/SignApk.jar",
-			"iOS": "http://az793023.vo.msecnd.net/smartface-bin/runtime/4.3.1/iOS_Player.zip",
+			"iOS": "http://az793023.vo.msecnd.net/smartface-bin/runtime/4.4.0/iOS_Player.zip",
 			"zipalign": {
 				"win32": "http://az793023.vo.msecnd.net/smartface-bin/zipaligntool/smartface-4.4.0/zipalign.exe"
 			}

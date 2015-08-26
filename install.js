@@ -73,6 +73,7 @@ function downloadFiles(urls, dest, done) {
 		}
 		url = urls.pop();
 		var basename = path.basename(url);
+		console.log('Downloading file: ' + basename);
 		downloadFile(url, dest + basename, callback);
 	}
 
