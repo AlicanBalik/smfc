@@ -60,6 +60,9 @@ function handlePostInstall() {
 
 	downloadFiles(filesToDownload, __dirname + '/bin/', function() {
 		console.log('All required files are downloaded');
+		fs.readdirSync(TMP_ROOT).forEach(function(fileName) {
+			fs.unlinkSync(TMP_ROOT + '/' + fileName);
+		});
 	});
 }
 
