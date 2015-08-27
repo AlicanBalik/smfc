@@ -44,11 +44,11 @@
 		},
 		"license": {
 			"short": "-l",
-			"long": "--license",
+			"long": "--licenseFile",
 			"value": "<license file path>",
-			"description": "your license file",
+			"description": "your license file path",
 			"deepDescription": "your license file",
-			"example": "--license=C:/Users/user/license.xml"
+			"example": "--licenseFile=C:/Users/user/license.xml"
 		},
 		"java": {
 			"short": "-j",
