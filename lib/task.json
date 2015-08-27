@@ -5,7 +5,7 @@
 			"optionalArguments": [
 				"config_file_full_path",
 				"config_file"
-			],
+			]
 		},
 		"desktop": {
 			"basicArguments": [
@@ -14,12 +14,13 @@
 			],
 			"optionalArguments": [
 				"outputApk"
-			],
+			]
 		},
 		"common": {
 			"basicArguments": [
 				"projectRoot",
-				"task"
+				"task",
+				"platform"
 			],
 			"optionalArguments": [
 				"licenseFile",
@@ -49,7 +50,7 @@
 				"config_file_full_path",
 				"config_file",
 				"licenseFile"
-			],
+			]
 		},
 		"desktop": {
 			"basicArguments": [
@@ -60,12 +61,13 @@
 			"optionalArguments": [
 				"outputZip"
 
-			],
+			]
 		},
 		"common": {
 			"basicArguments": [
 				"projectRoot",
-				"task"
+				"task",
+				"platform"
 			],
 			"optionalArguments": [
 				"licenseFile",
