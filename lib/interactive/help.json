@@ -47,7 +47,7 @@
 			"long": "--java",
 			"value": "<java exec path>",
 			"description": "Java 1.7 path",
-			"deepDescription": "Java 1.7 path\n\tAndroid requires Java 1.7 decompilation, compilation, and signing of apk files.\n\tIf no input is given, program will try to guess the best possible option.",
+			"deepDescription": "Java 1.7 path\n\tAndroid requires Java 1.7 for decompilation, compilation, and signing of apk files.\n\tIf no input is given, program will try to guess the best possible option.",
 			"example": "--java=java"
 		},
 		"inputApk": {
@@ -79,7 +79,7 @@
 			"long": "--profile",
 			"value": "<profiles>",
 			"description": "Android options for architecture and package profiles",
-			"deepDescription": "Android projects can be built for ARM or x86 architectures.\n\tProfile options allow choosing different image folders such as Default, mdpi, hdpi, etc options.",
+			"deepDescription": "Android projects can be built for ARM or x86 architectures.\n\tProfile options allow choosing different image folders such as Default, mdpi, hdpi, etc.",
 			"example": "--profile=arm:hdpi;x86:*"
 		},
 		"maxJavaMemory": {
