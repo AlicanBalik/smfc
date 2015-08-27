@@ -6,120 +6,120 @@
 			"short": "-h",
 			"long": "--help",
 			"value": "<options or tasks>",
-			"description": "output usage information of options",
-			"deepDescription": "output usage information of options",
+			"description": "General help",
+			"deepDescription": "General help.\nIf no value is given, default help screen is shown.\nIf a value is given, more details about that task or attribute are shown.",
 			"example": "smfc --help=task"
 		},
 		"interactive": {
 			"short": "-i",
 			"long": "--interactive",
 			"value": "",
-			"description": "Smartface Command-Line Interface via interactive mode",
-			"deepDescription": "Smartface Command-Line Interface via interactive mode",
+			"description": "Smartface Command-Line Interface in interactive mode",
+			"deepDescription": "Smartface Command-Line Interface in interactive mode",
 			"example": "smfc -i"
 		},
 		"task": {
 			"short": "-t",
 			"long": "--task",
 			"value": "<task>",
-			"description": "task that will be run",
-			"deepDescription": "task that will be run",
+			"description": "Task to execute",
+			"deepDescription": "Task to execute",
 			"example": "--task=android-full-publish"
 		},
 		"projectRoot": {
 			"short": "-r",
 			"long": "--projectRoot",
 			"value": "<root path>",
-			"description": "your project main folder",
-			"deepDescription": "your project main folder",
+			"description": "Target project's root folder",
+			"deepDescription": "Target project's root folder",
 			"example": "--projectRoot=../smfc-sample"
 		},
 		"outputRoot": {
 			"short": "-o",
 			"long": "--outputRoot",
 			"value": "<out path>",
-			"description": "folder of your apk or zip file ",
-			"deepDescription": "folder of your apk or zip file",
+			"description": "Folder where the files will be put after a task is executed",
+			"deepDescription": "Publish processes produce Android apk files or iOS projects in a zip file.\n\tThese files are placed under this root folder.",
 			"example": "--outputRoot=/home/smartface/out"
 		},
 		"license": {
 			"short": "-l",
 			"long": "--licenseFile",
 			"value": "<license file path>",
-			"description": "your license file path",
-			"deepDescription": "your license file",
+			"description": "Your Smartface license file path",
+			"deepDescription": "Your Smartface license file path. If none is given, 'Smartface Demo' license is used.",
 			"example": "--licenseFile=C:/Users/user/license.xml"
 		},
 		"java": {
 			"short": "-j",
 			"long": "--java",
 			"value": "<java exec path>",
-			"description": "Java 1.7 wil be needed to apk operations",
-			"deepDescription": "Java 1.7 wil be needed to apk operations(decompile, compile, sign)",
+			"description": "Java 1.7 path",
+			"deepDescription": "Java 1.7 path\nAndroid requires Java 1.7 decompilation, compilation, and signing of apk files.\nIf no input is given, program will try to guess the best possible option.",
 			"example": "--java=java"
 		},
 		"playerArm": {
 			"short": "-a",
 			"long": "--inputApk",
 			"value": "<player arm apk>",
-			"description": "Smartface Player apk for ARM",
-			"deepDescription": "Smartface Player apk for ARM",
+			"description": "Smartface Android Player apk for ARM architecture",
+			"deepDescription": "Smartface Android Player apk for ARM architecture",
 			"example": "--inputApk=bin/SmartfacePlayer.apk"
 		},
 		"playerx86": {
 			"short": "-x",
 			"long": "--inputApkx86",
 			"value": "<player x86 apk>",
-			"description": "Smartface Player apk for x86",
-			"deepDescription": "Smartface Player apk for x86",
+			"description": "Smartface Android Player apk for x86 architecture",
+			"deepDescription": "Smartface Android Player apk for x86 architecture",
 			"example": "--inputApkx86=bin/SmartfacePlayer-x86.apk"
 		},
 		"inputZip": {
 			"short": "-z",
 			"long": "--inputZip",
 			"value": "<ios player>",
-			"description": "Smartface Player zip for iOS",
-			"deepDescription": "Smartface Player zip for iOS",
+			"description": "Smartface iOS Player project zip",
+			"deepDescription": "Smartface iOS Player project zip",
 			"example": "--inputZip=bin/SmartfacePlayer.zip"
 		},
 		"profile": {
 			"short": "-p",
 			"long": "--profile",
 			"value": "<profiles>",
-			"description": "ARM or x86 profiles that will be published ",
-			"deepDescription": "ARM or x86 profiles that will be published ( Default, mdpi, hdpi, ...)",
+			"description": "Android options for architecture and package profiles",
+			"deepDescription": "Android projects can be built for ARM or x86 architectures.\nProfile options allow choosing different image folders such as Default, mdpi, hdpi, etc options.",
 			"example": "--profile=arm:hdpi;x86:*"
 		},
 		"maxJavaMemory": {
 			"short": "-m",
 			"long": "--maxJavaMemory",
 			"value": "<memory size>",
-			"description": "Java to be used max memory while running. ",
-			"deepDescription": "Java to be used max memory while running.",
+			"description": "Maximum amount of memory to be consumed by Java",
+			"deepDescription": "Maximum amount of memory to be consumed by Java.\nAndroid publish processes may wish to consume RAM that may be greater than what is available in the host environment.\nThis is not an issue for most laptop or desktop environments, but more for Virtual Machines where RAM may be limited to 512 MB.",
 			"example": "--maxJavaMemory=1024m"
 		},
 		"logLevel": {
 			"short": "-l",
 			"long": "--logLevel",
 			"value": "<level>",
-			"description": "level of log",
-			"deepDescription": "level of log, you can logging and control log file. \n Log Levels: all, debug, info, warn, error, fatal, off",
+			"description": "Log Level",
+			"deepDescription": "Log Level.\n\tDetermines the verbosity level of logging.\n\tLog Levels: all, debug, info, warn, error, fatal, off",
 			"example": "--logLevel=debug"
 		},
 		"logFile": {
 			"short": "-f",
 			"long": "--logFile",
 			"value": "<file path>",
-			"description": "file of specific ",
-			"deepDescription": "You can logging into the file.",
+			"description": "Log to a specific file.",
+			"deepDescription": "Log to a specific file.\nIf this option is not given, logs are not written to a file.",
 			"example": "--logFile=../smfc-sample/log/smfc.log"
 		},
 		"logStdOut": {
 			"short": "-O",
 			"long": "--logStdOut",
 			"value": "<status>",
-			"description": "log on console",
-			"deepDescription": "You can logging on the console.",
+			"description": "Log to console.",
+			"deepDescription": "Log to console.\nIf this option is not given, logs are not printed on the console.",
 			"example": "--logStdOut=true"
 		}
 	},
@@ -132,7 +132,7 @@
 		"short": "-h",
 		"long": "--help",
 		"value": "",
-		"description": "output usage information",
+		"description": "General Help",
 		"example": "smfc -h"
 	},
 	"color": {
@@ -158,8 +158,8 @@
 				"logFile",
 				"logStdOut"
 			],
-			"description": "Publish for android",
-			"deepDescription": "Publish for android",
+			"description": "Publish for Android",
+			"deepDescription": "Publish for Android",
 			"example": "smfc --task=android-full-publish --projectRoot=../smfc-sample",
 			"advancedExample": "smfc --task=android-full-publish --projectRoot=../smfc-sample --outputRoot=../smfc-sample/output --logLevel=debug --LogFile=../smfc-sample/log/android.log --maxJavaMemory=512m --profile=arm:Default;x86:hdpi"
 		},
@@ -175,8 +175,8 @@
 				"logFile",
 				"logStdOut"
 			],
-			"description": " Publish for ios",
-			"deepDescription": "Publish for ios",
+			"description": " Publish for iOS",
+			"deepDescription": "Publish for iOS",
 			"example": "smfc --task=ios-full-publish --projectRoot=../smfc-sample",
 			"advancedExample": "smfc --task=ios-full-publish --projectRoot=../smfc-sample --outputRoot=../smfc-sample/output --logLevel=debug --LogFile=../smfc-sample/log/ios.log "
 		}
