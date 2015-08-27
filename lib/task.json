@@ -1,0 +1,78 @@
+{
+	"android-full-publish": {
+		"smfCloud": {
+			"basicArguments": [],
+			"optionalArguments": [
+				"config_file_full_path",
+				"config_file"
+			],
+		},
+		"desktop": {
+			"basicArguments": [
+				"platform",
+				"sfpx"
+			],
+			"optionalArguments": [
+				"outputApk"
+			],
+		},
+		"common": {
+			"basicArguments": [
+				"projectRoot",
+				"task"
+			],
+			"optionalArguments": [
+				"licenseFile",
+				"logStdOut",
+				"logFile",
+				"logLevel",
+				"inputApk",
+				"inputApkx86",
+				"profile",
+				"java",
+				"maxJavaMemory",
+				"apkTool",
+				"signer",
+				"keystoreFile",
+				"keystorePass",
+				"aliasName",
+				"keyPass"
+			]
+		}
+	},
+	"ios-full-publish": {
+		"smfCloud": {
+			"basicArguments": [],
+			"optionalArguments": [
+				"inputZip",
+				"outputZip",
+				"config_file_full_path",
+				"config_file",
+				"licenseFile"
+			],
+		},
+		"desktop": {
+			"basicArguments": [
+				"platform",
+				"sfpx",
+				"inputZip"
+			],
+			"optionalArguments": [
+				"outputZip"
+
+			],
+		},
+		"common": {
+			"basicArguments": [
+				"projectRoot",
+				"task"
+			],
+			"optionalArguments": [
+				"licenseFile",
+				"logStdOut",
+				"logFile",
+				"logLevel"
+			]
+		}
+	}
+}
