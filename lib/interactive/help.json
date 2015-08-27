@@ -103,7 +103,7 @@
 			"long": "--logLevel",
 			"value": "<level>",
 			"description": "level of log",
-			"deepDescription": "level of log, you can logging and control log file. Log Levels: all, debug, info, warn, error, fatal, off",
+			"deepDescription": "level of log, you can logging and control log file. \n Log Levels: all, debug, info, warn, error, fatal, off",
 			"example": "--logLevel=debug"
 		},
 		"logFile": {
