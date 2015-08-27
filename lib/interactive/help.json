@@ -103,7 +103,7 @@
 			"long": "--logLevel",
 			"value": "<level>",
 			"description": "level of log",
-			"deepDescription": "level of log, you can logging and control log file.",
+			"deepDescription": "level of log, you can logging and control log file. Log Levels: all, debug, info, warn, error, fatal, off",
 			"example": "--logLevel=debug"
 		},
 		"logFile": {
@@ -148,13 +148,11 @@
 				"projectRoot"
 			],
 			"optional": [
-				"outputRoot",
 				"license",
 				"profile",
 				"java",
 				"inputApk",
 				"inputApkx86",
-				"plugin",
 				"maxJavaMemory",
 				"logLevel",
 				"logFile",
@@ -171,7 +169,7 @@
 				"projectRoot"
 			],
 			"optional": [
-				"outputRoot",
+				"inputZip",
 				"license",
 				"logLevel",
 				"logFile",
