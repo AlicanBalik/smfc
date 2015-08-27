@@ -7,7 +7,7 @@
 			"long": "--help",
 			"value": "<options or tasks>",
 			"description": "General help",
-			"deepDescription": "General help.\nIf no value is given, default help screen is shown.\nIf a value is given, more details about that task or attribute are shown.",
+			"deepDescription": "General help.\n\tIf no value is given, default help screen is shown.\n\tIf a value is given, more details about that task or attribute are shown.",
 			"example": "smfc --help=task"
 		},
 		"interactive": {
@@ -34,15 +34,7 @@
 			"deepDescription": "Target project's root folder",
 			"example": "--projectRoot=../smfc-sample"
 		},
-		"outputRoot": {
-			"short": "-o",
-			"long": "--outputRoot",
-			"value": "<out path>",
-			"description": "Folder where the files will be put after a task is executed",
-			"deepDescription": "Publish processes produce Android apk files or iOS projects in a zip file.\n\tThese files are placed under this root folder.",
-			"example": "--outputRoot=/home/smartface/out"
-		},
-		"license": {
+		"licenseFile": {
 			"short": "-l",
 			"long": "--licenseFile",
 			"value": "<license file path>",
@@ -55,10 +47,10 @@
 			"long": "--java",
 			"value": "<java exec path>",
 			"description": "Java 1.7 path",
-			"deepDescription": "Java 1.7 path\nAndroid requires Java 1.7 decompilation, compilation, and signing of apk files.\nIf no input is given, program will try to guess the best possible option.",
+			"deepDescription": "Java 1.7 path\n\tAndroid requires Java 1.7 decompilation, compilation, and signing of apk files.\n\tIf no input is given, program will try to guess the best possible option.",
 			"example": "--java=java"
 		},
-		"playerArm": {
+		"inputApk": {
 			"short": "-a",
 			"long": "--inputApk",
 			"value": "<player arm apk>",
@@ -66,7 +58,7 @@
 			"deepDescription": "Smartface Android Player apk for ARM architecture",
 			"example": "--inputApk=bin/SmartfacePlayer.apk"
 		},
-		"playerx86": {
+		"inputApkx86": {
 			"short": "-x",
 			"long": "--inputApkx86",
 			"value": "<player x86 apk>",
@@ -87,7 +79,7 @@
 			"long": "--profile",
 			"value": "<profiles>",
 			"description": "Android options for architecture and package profiles",
-			"deepDescription": "Android projects can be built for ARM or x86 architectures.\nProfile options allow choosing different image folders such as Default, mdpi, hdpi, etc options.",
+			"deepDescription": "Android projects can be built for ARM or x86 architectures.\n\tProfile options allow choosing different image folders such as Default, mdpi, hdpi, etc options.",
 			"example": "--profile=arm:hdpi;x86:*"
 		},
 		"maxJavaMemory": {
@@ -95,7 +87,7 @@
 			"long": "--maxJavaMemory",
 			"value": "<memory size>",
 			"description": "Maximum amount of memory to be consumed by Java",
-			"deepDescription": "Maximum amount of memory to be consumed by Java.\nAndroid publish processes may wish to consume RAM that may be greater than what is available in the host environment.\nThis is not an issue for most laptop or desktop environments, but more for Virtual Machines where RAM may be limited to 512 MB.",
+			"deepDescription": "Maximum amount of memory to be consumed by Java.\n\tAndroid publish processes may wish to consume RAM that may be greater than what is available in the host environment.\nThis is not an issue for most laptop or desktop environments, but more for Virtual Machines where RAM may be limited to 512 MB.",
 			"example": "--maxJavaMemory=1024m"
 		},
 		"logLevel": {
@@ -111,7 +103,7 @@
 			"long": "--logFile",
 			"value": "<file path>",
 			"description": "Log to a specific file.",
-			"deepDescription": "Log to a specific file.\nIf this option is not given, logs are not written to a file.",
+			"deepDescription": "Log to a specific file.\n\tIf this option is not given, logs are not written to a file.",
 			"example": "--logFile=../smfc-sample/log/smfc.log"
 		},
 		"logStdOut": {
@@ -119,7 +111,7 @@
 			"long": "--logStdOut",
 			"value": "<status>",
 			"description": "Log to console.",
-			"deepDescription": "Log to console.\nIf this option is not given, logs are not printed on the console.",
+			"deepDescription": "Log to console.\n\tIf this option is not given, logs are not printed on the console.",
 			"example": "--logStdOut=true"
 		}
 	},
