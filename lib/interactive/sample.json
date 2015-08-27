@@ -2,6 +2,9 @@
 	"samples": [{
 		"name": "Kitchen Sink",
 		"link": "https://github.com/smartface/KitchenSink"
+	}, {
+		"name": "Empty Workspace",
+		"link": "https://github.com/SmartfaceIO/smfc-empty-workspace"
 	}]
 
 }
