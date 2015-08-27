@@ -41,11 +41,11 @@ If you want to publish, you must pass these arguments
     
 ### Optional parameters
 You can use optional parameters.
-- <b>license</b>
+- <b>licenseFile</b>
    Your license file path
 
-###### Example license
-    --license=$(LICENSE) , --license=/home/Smartface/license.xml
+###### Example licenseFile
+    --licenseFile=$(LICENSE) , --licenseFile=/home/Smartface/license.xml
   
 - <b>java</b>
    Java 1.7 wil be needed for the apk file operations. If you do not set this parameter, the tool will try to find Java 1.7, and use that version if it can find one.
