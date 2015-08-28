@@ -4,6 +4,12 @@
 
 - Node.js & Npm 
 
+Node version must be greater than or equal to 0.12.
+
+-  git
+
+If you want download sample projects, you must install [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
+
 ### Install
 
 install [node.js](https://nodejs.org/download)
