@@ -4,11 +4,23 @@
 
 - Node.js & Npm 
 
-Node version must be greater than or equal to 0.12.
+Node version must be greater than or equal to <b>0.12</b>.
 
 -  git
 
-If you want download sample projects, you must install [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
+If you want download sample projects, you must [install git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
+
+-  ia32-libs
+
+You must install these libs to run ApkTool completely on 64bit <b>Linux</b> machines.
+solution for Ubuntu machines:
+ ```
+ sudo -i
+ cd /etc/apt/sources.list.d
+ echo "deb http://old-releases.ubuntu.com/ubuntu/ raring main restricted universe multiverse" >ia32-libs-raring.list
+ apt-get update
+ apt-get install ia32-libs
+ ```
 
 ### Install
 
@@ -33,15 +45,6 @@ You can see solution
 #### Install
 
 - ``npm i -g --production``
-
-#### Linux ( Ubuntu )
- ApkTool completely works on 64bit machines , you will need to install these libs:
-- ``sudo -i``
-- ``cd /etc/apt/sources.list.d``
-- ``echo "deb http://old-releases.ubuntu.com/ubuntu/ raring main restricted universe multiverse" >ia32-libs-raring.list``
-- ``apt-get update``
-- ``apt-get install ia32-libs``
-
 
 You can start using
 
