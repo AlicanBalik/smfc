@@ -1,6 +1,6 @@
 {
 	"name": "smartface",
-	"version": "0.0.12",
+	"version": "0.0.13",
 	"description": "Smartface Node.js build tool",
 	"main": "bin/global-exec.js",
 	"bin": {

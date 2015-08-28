@@ -5,6 +5,7 @@ var path = require('path');
 var ENV = process.env;
 var PLATFORM = os.platform();
 var TMP_ROOT = os.tmpdir() + '/smartface-install/';
+console.log('TMP_ROOT', TMP_ROOT);
 
 if (process.env.npm_lifecycle_event === 'preuninstall') {
 	handlePreUninstall();
