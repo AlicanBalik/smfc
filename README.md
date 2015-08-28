@@ -10,7 +10,7 @@ Other features will be integrated in the future, such as emulator, drag&drop int
 
 - Node.js & Npm 
 
-Node version must be greater than or equal to<b>0.12</b>.
+Node version must be greater than or equal to <b>0.12</b>.
 [Click to install node.js](https://nodejs.org/download)
 
 -  git
