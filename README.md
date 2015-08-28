@@ -7,9 +7,27 @@ Other features will be integrated in the future, such as emulator, drag&drop int
 [![NPM](https://nodei.co/npm/smartface.png)](https://nodei.co/npm/smartface/)
 
 # Requirements
- Node.js & Npm 
 
+- Node.js & Npm 
+
+Node version must be greater than or equal to 0.12.
 [Click to install node.js](https://nodejs.org/download)
+
+-  git
+
+If you want download sample projects, you must [install git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
+
+-  ia32-libs
+
+You must install these libs to run ApkTool completely on 64bit <b>Linux</b> machines.
+solution for Ubuntu machines:
+ ```
+ sudo -i
+ cd /etc/apt/sources.list.d
+ echo "deb http://old-releases.ubuntu.com/ubuntu/ raring main restricted universe multiverse" >ia32-libs-raring.list
+ apt-get update
+ apt-get install ia32-libs
+ ```
 
 # Install
     npm install smartface -g --production
